@@ -1,0 +1,17 @@
+/*Responsive design rules*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*Header rules*/
+#header {
+  background-color: #000;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(images/plants1.jpg);
+  height: 100vh;
+}

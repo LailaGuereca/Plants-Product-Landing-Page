@@ -119,3 +119,11 @@ body {
   border: 0px;
   border-radius: 10px;
 }
+
+/*Best-sellers products rules*/
+.container {
+  display: grid;
+  place-items: center;
+  margin: 1em;
+  font-family: "Crimson Text", serif;
+}

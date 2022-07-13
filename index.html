@@ -25,21 +25,21 @@
       <nav id="nav-bar">
         <ul class="menu">
           <li class="menu_labels"><a href="#best-sellers" class="nav-link">Best sellers</a></li>
-          <li class="menu_labels"><a href="" class="nav-link">Home interior</a></li>
+          <li class="menu_labels"><a href="#home-interior" class="nav-link">Home interior</a></li>
           <li class="menu_labels"><a href="" class="nav-link">Subscribe</a></li>
         </ul>
       </nav>
     </header>
     <section id="hero"><!--Hero image and form-->
       <h2>Plants to be happy</h2>
-      <form id="form">
-        <input id="email" type="email" placeholder="Enter your email address">
+      <form id="form" action="submit">
+        <input id="email" type="email" placeholder="Enter your email address" name="email">
         <br>
         <input id="submit" type="submit" value="Get notifications">
       </form>
     </section>
-    <h3 class="section-title">Best sellers</h3>
-    <section id="best-sellers"><!--Best sellers product section-->
+    <section><!--Best sellers product section-->
+      <h3 class="section-title" id="best-sellers">Best sellers</h3>
       <div class="container"><!--Product card 1-->
         <div class="card">
           <div class="img">
@@ -145,6 +145,10 @@
           </div>
         </div>
       </div>
+    </section>
+    <section id="home-interior">
+      <h3 class="section-title">Home interior</h3>
+      <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/MnX9CjwIBvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </section>
   </body>
 </html>

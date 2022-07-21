@@ -60,12 +60,21 @@ body {
   align-items: center;
 }
 
+#nav-bar ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
 #nav-bar ul li a {
-  display: block;
   padding: 5px;
   margin-bottom: 20px;
   text-decoration: none;
   color: #000;
+  transition: all 0.3s ease 0s;
+}
+
+#nav-bar ul li a:hover {
+  color: #76BA99;
 }
 
 /*Hero and form rules*/
@@ -125,7 +134,6 @@ body {
 .section-title {
   margin: 400px auto 20px auto;
   padding: 0;
-  background-color: #FFF;
   font-family: "Berkshire Swash", cursive;
   font-size: 2rem;
   text-align: center;
@@ -236,4 +244,184 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+/*Subscription section and cards rules*/
+#subscribe {
+  max-width: 100%;
+  margin: 50px auto 50px auto;
+}
+
+.cardsub {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 100px;
+  position: relative;
+  width: 350px;
+  height: 190px;
+  background: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+  transition: 0.5s;
+}
+
+.cardsub:hover {
+  height: 450px;
+}
+
+.imgsub {
+  position: absolute;
+  left: 50%;
+  top: -50px;
+  transform: translateX(-50%);
+  width: 150px;
+  height: 150px;
+  background: #FFF;
+  border-radius: 20px;
+  box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.cardsub:hover .imgsub {
+  width: 250px;
+  height: 250px;
+}
+
+.imgsub img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  object-fit: cover;
+}
+
+.cardsub .contentsub {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  overflow: hidden;
+}
+
+.cardsub .contentsub .details {
+  padding: 40px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(150px);
+}
+
+.cardsub:hover .contentsub .details {
+  transform: translateY(0px);
+}
+
+.cardsub .contentsub .details h2 {
+  font-size: 1.25em;
+  font-weight: 600;
+  color: #555;
+  line-height: 1.2em;
+}
+
+.cardsub .contentsub .details h2 span {
+  font-size: 0.75em;
+  font-weight: 500;
+  opacity: 0.5;
+}
+
+.cardsub .contentsub .details .data {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.cardsub .contentsub .details .data h3 {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.2em;
+  font-weight: 600;
+}
+
+.cardsub .contentsub .details .data h3 span {
+  font-size: 0.85em;
+  font-weight: 400;
+  opacity: 0.5;
+}
+
+.cardsub .contentsub .details .actionsub {
+  display: flex;
+  justify-content: space-between;
+  /*gap: 20px;*/
+}
+
+.cardsub .contentsub .details .actionsub button {
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-size: 1em;
+  font-weight: 500;
+  background: #76BA99;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.cardsub .contentsub .details .actionsub button:nth-child(2) {
+  border: 1px solid #999;
+  color: #999;
+  background: #FFF;
+}
+
+/*Footer rules*/
+footer {
+  width: 100%;
+  padding: 20px;
+  margin-top: 30px;
+  text-align: center;
+  background-color: #76BA99;
+}
+
+footer ul {
+  padding: 0;
+}
+
+footer ul li {
+  display: inline;
+}
+
+footer ul li:not(last-child) {
+  margin-right: 10px;
+}
+
+footer ul li a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+/*Media Query*/
+@media (min-width:600px) {
+  #header {
+    max-width: 100%;
+    flex-direction: row;
+    left: 5%;
+    right: 5%;
+  }
+
+  #nav-bar ul {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  #nav-bar ul li {
+    display: inline;
+    margin-right: 50px;
+  }
+
+  #nav-bar ul li:last-child {
+    margin-right: 0%;
+  }
 }
